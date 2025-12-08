@@ -47,16 +47,19 @@ bank-churn-prediction/
 ├── requirements.txt       # Project dependencies
 └── README.md              # Project documentation
 
+```
+
 ## How to Run Locally
-Clone the repository:
+
+**Clone the repository:**
 
 git clone [https://github.com/yagmurbo/bank-churn-prediction.git](https://github.com/yagmurbo/bank-churn-prediction.git)
 cd bank-churn-prediction
 
-Install dependencies:
+**Install dependencies:**
 
 pip install -r requirements.txt
 
-Run the Streamlit app:
+**Run the Streamlit app:**
 
 streamlit run app.py
