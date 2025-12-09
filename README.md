@@ -48,8 +48,6 @@ In churn prediction, **False Negatives** (missing a customer who leaves) are mor
 * **Optimization:** I adjusted the **Decision Threshold from 0.50 to 0.40**.
 * **Result:** This increased the **Recall** significantly, ensuring we catch more risky customers, even if it slightly reduces Precision. This aligns with the business goal of maximizing retention.
 
-🔗 **Live Demo:** [Click here to test the app!](https://huggingface.co/spaces/yagmurbozatli/bank-churn-prediction)
-
 ## Key Features
 * **Data Leakage Prevention:** Identified and removed the `Complain` column, which was causing data leakage and unrealistic accuracy scores (99%).
 * **Advanced Feature Engineering:** Created new features to capture customer behavior better:
