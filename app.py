@@ -15,7 +15,7 @@ except ImportError:
     st.stop()
 
 #importing the model
-model_path = os.path.join("models", "churn_rf_model.pkl")
+model_path = os.path.join("notebooks", "rf_model.pkl")
 
 if not os.path.exists(model_path):
     st.error(f"Model file not found at {model_path}. Please train the model first.")
@@ -97,7 +97,7 @@ if st.button("Predict Churn Probability"):
     #display results
     if is_churn:
         st.error(f"The customer is likely to churn with a probability of {prediction_proba*100:.2f}%.")
-        st.write("Recommendation: Consider offering retention incentives or personalized services to retain this customer.")
+        st.write("Recommendation: Consider offering personalized services to retain this customer.")
 
     else:
         st.success(f"The customer is likely to stay with a probability of {(1 - prediction_proba)*100:.2f}%.")
